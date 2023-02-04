@@ -1,0 +1,38 @@
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Art Nouveau mosaic studio</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    {{ partial "navbar-item" (dict "text" "О нас" "href" "/about") }}
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Обучение
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/workshops">Мастер-классы</a></li>
+                            <li><a class="dropdown-item" href="/#">Абонементы</a></li>
+                        </ul>
+                    </li>
+                    {{ partial "navbar-item" (dict "text" "Праздники" "href" "/events") }}
+                    {{ partial "navbar-item" (dict "text" "Магазин" "href" "/shop") }}
+                    {{ partial "navbar-item" (dict "text" "Галерея" "href" "/gallery") }}
+                    {{ partial "navbar-item" (dict "text" "Контакты" "href" "/contacts") }}
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+{{ define "partials/navbar-item.html" }}
+<li class="nav-item">
+    <a class="nav-link" href="{{ .href }}" aria-current="page">{{ .text }}</a>
+</li>
+{{ end }}
