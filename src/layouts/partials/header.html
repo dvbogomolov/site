@@ -1,0 +1,26 @@
+<header id="header" class="fixed-top d-flex align-items-center">
+
+    <div class="container d-flex align-items-center">
+
+        <h1 class="logo me-auto"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+        <nav id="navbar" class="navbar">
+            <ul>
+                {{- range site.Menus.main }}
+                <li>
+                    <a class="" href="{{ .URL }}" aria-current="page">{{ .Name }}</a>
+                </li>
+                {{- end }}
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+
+    </div>
+
+</header>
+
+{{ define "partials/navbar-item.html" }}
+<li><a class="{{ .class }}" href="{{ .href }}" aria-current="page">{{ .text }}</a></li>
+{{ end }}

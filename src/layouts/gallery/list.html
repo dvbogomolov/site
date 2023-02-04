@@ -1,0 +1,28 @@
+{{ define "main" }}
+<main id="main">
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="row">
+
+                {{ range .Resources.ByType "image" }}
+                <div class="col-lg-4 col-md-6 gallery-item filter-app">
+                    <div class="gallery-wrap">
+                        <img src="{{ .Permalink }}" class="img-fluid" alt="">
+                        <div class="gallery-info">
+                            {{/* <h4>App 1</h4> */}}
+                            {{/* <p>App</p> */}}
+                            <div class="gallery-links">
+                                <a href="{{ .Permalink }}" data-gallery="galleryGallery" class="gallery-lightbox" title="App 1">
+                                    <i class="bx bx-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+                
+            </div>
+        </div>
+    </section>
+</main>
+{{ end }}

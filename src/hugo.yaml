@@ -1,0 +1,13 @@
+baseURL:          https://art-nouveau.github.io/site/
+languageCode:     ru-ru
+title:            Арт-Нуво
+
+publishDir:       .public
+
+params:
+  address1:       Санкт-Петербург, м. Парк Победы
+  address2:       Московский проспект, д. 155, 39
+  email:          artnouveau.mosaic@gmail.com
+  phone:          +7 (911) 082-56-00
+  vk:             https://vk.com/a.r.t.nouveau
+  instagram:      https://www.instagram.com/a.r.t.nouveau
