@@ -9,10 +9,12 @@
   <body>
 
     {{ partial "icons" . }}
-    {{ partial "navbar" . }}
+    {{ partial "header" . }}
 
-    {{ block "main" . }}
-    {{ end }}
+    <div class="container-fluid">
+        {{ block "main" . }}
+        {{ end }}
+    </div>
 
     {{ partial "footer" . }}
 

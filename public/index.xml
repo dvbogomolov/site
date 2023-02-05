@@ -6,5 +6,60 @@
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://example.org/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/about/</guid>
+      <description>AboutО нас</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/contacts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/contacts/</guid>
+      <description>Контакты</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/events/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/events/</guid>
+      <description>Праздники</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/gallery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/gallery/</guid>
+      <description>Галерея</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/shop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/shop/</guid>
+      <description>Магазин</description>
+    </item>
+    
+    <item>
+      <title>Мозаика в деревянной форме</title>
+      <link>http://example.org/workshops/1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/workshops/1/</guid>
+      <description>Мастер-класс для детей от 6 лет мозаика в деревянной форме.
+Детские группы работают с уже наколотой мозаикой и запеченными стеклышками :)</description>
+    </item>
+    
   </channel>
 </rss>
