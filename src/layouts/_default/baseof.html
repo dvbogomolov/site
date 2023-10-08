@@ -22,8 +22,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.js" integrity="sha256-00IsGChxE1Zm2mhUGbvtSAoI9R/q2VRvuVllpuR0UKM=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/waypoints@4.0.1/lib/jquery.waypoints.min.js" integrity="sha256-No2qtnsaWysoAu27rHmiqkupkqLr+cZ7mK14TYAEAYw=" crossorigin="anonymous"></script>
 
-    {{ $mainJs := resources.Get "js/main.js" }}
-    <script src="{{ $mainJs.Permalink }}"></script>
+    {{ $js := resources.Get "js/main.js" }}
+    <script src="{{ $js.Permalink }}"></script>
 </body>
 
 </html>

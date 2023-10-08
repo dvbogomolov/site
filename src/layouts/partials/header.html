@@ -33,12 +33,18 @@
 
         <div class="container d-flex align-items-center">
     
-          <h1 class="logo me-auto"><a href="index.html">Sailor</a></h1>
+          <h1 class="logo me-auto"><a href="index.html">{{ .Site.Title }}</a></h1>
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
     
           <nav id="navbar" class="navbar">
             <ul>
+              {{ partial "navbar-item" (dict "text" "О нас" "href" "/about") }}
+              {{ partial "navbar-item" (dict "text" "Праздники" "href" "/events") }}
+              {{ partial "navbar-item" (dict "text" "Магазин" "href" "/shop") }}
+              {{ partial "navbar-item" (dict "text" "Галерея" "href" "/gallery") }}
+              {{ partial "navbar-item" (dict "text" "Контакты" "href" "/contacts") }}     
+                       
               <li><a href="index.html" class="active">Home</a></li>
     
               <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
@@ -46,25 +52,11 @@
                   <li><a href="about.html">About</a></li>
                   <li><a href="team.html">Team</a></li>
                   <li><a href="testimonials.html">Testimonials</a></li>
-    
-                  <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                    <ul>
-                      <li><a href="#">Deep Drop Down 1</a></li>
-                      <li><a href="#">Deep Drop Down 2</a></li>
-                      <li><a href="#">Deep Drop Down 3</a></li>
-                      <li><a href="#">Deep Drop Down 4</a></li>
-                      <li><a href="#">Deep Drop Down 5</a></li>
-                    </ul>
-                  </li>
                 </ul>
               </li>
               <li><a href="services.html">Services</a></li>
               <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="pricing.html">Pricing</a></li>
-              <li><a href="blog.html">Blog</a></li>
-    
               <li><a href="contact.html">Contact</a></li>
-              <li><a href="index.html" class="getstarted">Get Started</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
           </nav>
@@ -74,7 +66,7 @@
 </header>
 
 {{ define "partials/navbar-item.html" }}
-<li class="nav-item">
-    <a class="nav-link" href="{{ .href }}" aria-current="page">{{ .text }}</a>
+<li>
+    <a href="{{ .href }}" aria-current="page">{{ .text }}</a>
 </li>
 {{ end }}
