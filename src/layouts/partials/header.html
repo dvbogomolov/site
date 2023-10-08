@@ -1,72 +1,32 @@
 <header id="header" class="fixed-top d-flex align-items-center">
 
-    {{/*  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/">Art Nouveau mosaic studio</a>
+    <div class="container d-flex align-items-center">
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
-                aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <h1 class="logo me-auto"><a href="index.html">{{ .Site.Title }}</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-            <div class="collapse navbar-collapse justify-content-md-center" id="navbar">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    {{ partial "navbar-item" (dict "text" "О нас" "href" "/about") }}
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Обучение
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/workshops">Мастер-классы</a></li>
-                            <li><a class="dropdown-item" href="/#">Абонементы</a></li>
-                        </ul>
-                    </li>
-                    {{ partial "navbar-item" (dict "text" "Праздники" "href" "/events") }}
-                    {{ partial "navbar-item" (dict "text" "Магазин" "href" "/shop") }}
-                    {{ partial "navbar-item" (dict "text" "Галерея" "href" "/gallery") }}
-                    {{ partial "navbar-item" (dict "text" "Контакты" "href" "/contacts") }}
-                </ul>
-            </div>
-        </div>
-    </nav>  */}}
-
-        <div class="container d-flex align-items-center">
-    
-          <h1 class="logo me-auto"><a href="index.html">{{ .Site.Title }}</a></h1>
-          <!-- Uncomment below if you prefer to use an image logo -->
-          <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-    
-          <nav id="navbar" class="navbar">
+        <nav id="navbar" class="navbar">
             <ul>
-              {{ partial "navbar-item" (dict "text" "О нас" "href" "/about") }}
-              {{ partial "navbar-item" (dict "text" "Праздники" "href" "/events") }}
-              {{ partial "navbar-item" (dict "text" "Магазин" "href" "/shop") }}
-              {{ partial "navbar-item" (dict "text" "Галерея" "href" "/gallery") }}
-              {{ partial "navbar-item" (dict "text" "Контакты" "href" "/contacts") }}     
-                       
-              <li><a href="index.html" class="active">Home</a></li>
-    
-              <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
-                <ul>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="team.html">Team</a></li>
-                  <li><a href="testimonials.html">Testimonials</a></li>
-                </ul>
-              </li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="contact.html">Contact</a></li>
+                {{ partial "navbar-item" (dict "text" "О нас" "href" "/site/about" "class" "active") }}
+                <li class="dropdown"><a href="#"><span>Обучение</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="/site/workshops">Мастер-классы</a></li>
+                        <li><a href="/site/#">Абонементы</a></li>
+                    </ul>
+                </li>
+                {{ partial "navbar-item" (dict "text" "Праздники" "href" "/site/events") }}
+                {{ partial "navbar-item" (dict "text" "Магазин" "href" "/site/shop") }}
+                {{ partial "navbar-item" (dict "text" "Галерея" "href" "/site/gallery") }}
+                {{ partial "navbar-item" (dict "text" "Контакты" "href" "/site/contacts") }}
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
-          </nav>
-    
-        </div>
-    
+        </nav>
+
+    </div>
+
 </header>
 
 {{ define "partials/navbar-item.html" }}
-<li>
-    <a href="{{ .href }}" aria-current="page">{{ .text }}</a>
-</li>
+<li><a class="{{ .class }}" href="{{ .href }}" aria-current="page">{{ .text }}</a></li>
 {{ end }}
