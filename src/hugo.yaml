@@ -1,3 +1,4 @@
 baseURL: https://art-nouveau.github.io/site/
 languageCode: ru-ru
 title:  Арт-Нуво
+publishDir: .public

@@ -91,7 +91,7 @@ h6 {
   padding: 0;
   line-height: 1;
   font-weight: 700;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 #header .logo a {
@@ -523,7 +523,7 @@ section {
   line-height: 1px;
   margin: 0 0 5px 0;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: #aaaaaa;
   font-family: "Raleway", sans-serif;
 }
@@ -542,7 +542,7 @@ section {
   margin: 0;
   font-size: 36px;
   font-weight: 700;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-family: "Raleway", sans-serif;
   color: #556270;
 }
@@ -613,7 +613,7 @@ section {
   font-size: 48px;
   line-height: 60px;
   margin-bottom: 20px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .about .content h3 {
@@ -702,7 +702,7 @@ section {
   font-size: 14px;
   font-weight: 600;
   line-height: 1;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: #444444;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
@@ -769,7 +769,7 @@ section {
 .portfolio .portfolio-wrap .portfolio-info p {
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   padding: 0;
   margin: 0;
   font-style: italic;
@@ -974,7 +974,7 @@ section {
 .skills .progress .skill {
   padding: 10px 0;
   margin: 0;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   display: block;
   font-weight: 600;
   font-family: "Raleway", sans-serif;
