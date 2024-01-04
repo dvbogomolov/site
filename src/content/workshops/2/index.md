@@ -1,5 +1,6 @@
 ---
 title: "Римская мозаика"
+weight: 10
 
 age: 15+
 duration: 4 часа

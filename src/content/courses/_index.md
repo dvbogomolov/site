@@ -4,5 +4,3 @@ menu:
         weight: 30
 title: Курсы
 ---
-<br/><br/><br/>
-<h2>Курсы</h2>
