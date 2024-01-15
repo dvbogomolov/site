@@ -1,8 +1,7 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-weight: 10
-
-age: 0
-duration: 0
-price: 1000
+title:      Lorem ipsum dolor sit amet
+weight:     100
+age:        0
+duration:   0
+price:      1000
 ---

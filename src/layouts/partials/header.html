@@ -6,12 +6,15 @@
         <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
         {{ $currentPage := .Page }}
+        {{ $parentPage := .Page.Parent }}
         <nav id="navbar" class="navbar">
             <ul>
                 {{- range site.Menus.main }}
                 <li>
                     {{ $menuEntryPage := .Page }}
-                    {{ $isMenuActive := eq $menuEntryPage $currentPage }}
+                    {{ $isMenuForPage := eq $menuEntryPage $currentPage }}
+                    {{ $isMenuForParentPage := eq $menuEntryPage $parentPage }}
+                    {{ $isMenuActive := or $isMenuForPage $isMenuForParentPage }}
                     <a class="{{ if $isMenuActive }}active{{ end }}" href="{{ .URL }}" aria-current="page">{{ .Name }}</a>
                 </li>
                 {{- end }}

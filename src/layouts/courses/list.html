@@ -8,10 +8,12 @@
                     <div class="testimonial-item mt-4">
                         <img src="{{ .Permalink }}/images/1.jpg" class="testimonial-img" alt="">
                         <h3>
-                            <a href="{{ .Permalink }}">{{ .Title }}</a>
+                            <a href="{{ .Permalink }}">{{ .Params.shortTitle }}</a>
                         </h3>
                         <p>
-                            Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                            {{ with .Resources.GetMatch "description.md" }}
+                                {{ .Content }}
+                            {{ end }}
                         </p>
                         <div class="read-more">
                             <a href="{{ .Permalink }}">Подробнее</a>
