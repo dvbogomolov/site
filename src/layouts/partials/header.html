@@ -11,11 +11,11 @@
             <ul>
                 {{- range site.Menus.main }}
                 <li>
-                    {{ $menuEntryPage := .Page }}
-                    {{ $isMenuForPage := eq $menuEntryPage $currentPage }}
-                    {{ $isMenuForParentPage := eq $menuEntryPage $parentPage }}
-                    {{ $isMenuActive := or $isMenuForPage $isMenuForParentPage }}
-                    <a class="{{ if $isMenuActive }}active{{ end }}" href="{{ .URL }}" aria-current="page">{{ .Name }}</a>
+                    {{- $menuEntryPage := .Page }}
+                    {{- $isMenuForPage := eq $menuEntryPage $currentPage }}
+                    {{- $isMenuForParentPage := eq $menuEntryPage $parentPage }}
+                    {{- $isMenuActive := or $isMenuForPage $isMenuForParentPage }}
+                    <a{{ if $isMenuActive }} class="active"{{ end }} href="{{ .URL }}" aria-current="page">{{ .Name }}</a>
                 </li>
                 {{- end }}
             </ul>

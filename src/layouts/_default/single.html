@@ -1,5 +1,7 @@
 {{ define "main" }}
 <main id="main">
+    {{ partial "breadcrumbs" . }}
+    
     {{ .Content }}
 </main>
 {{ end }}

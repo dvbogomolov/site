@@ -1,0 +1,23 @@
+<section id="breadcrumbs" class="breadcrumbs">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <ol>
+                {{ partial "breadcrumb-with-link" .Page.Parent.Parent }}
+                {{ partial "breadcrumb-with-link" .Page.Parent }}
+                {{ partial "breadcrumb-without-link" .Page }}
+            </ol>
+        </div>
+    </div>
+</section>
+
+{{- define "partials/breadcrumb-with-link.html" -}}
+    {{- if eq . nil -}}
+        {{- return -}}
+    {{- else -}}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{- end -}}
+{{- end -}}
+
+{{- define "partials/breadcrumb-without-link.html" -}}
+    <li>{{ .Title }}</li>
+{{- end -}}
