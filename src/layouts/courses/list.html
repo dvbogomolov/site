@@ -1,31 +1,6 @@
 {{ define "main" }}
 <main id="main">
-
     {{ partial "breadcrumbs" . }}
-
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <div class="row">
-                {{ range .Pages }}
-                <div class="col-lg-6">
-                    <div class="testimonial-item mt-4">
-                        <img src="{{ .Permalink }}/images/1.jpg" class="testimonial-img" alt="">
-                        <h3>
-                            <a href="{{ .Permalink }}">{{ .Title }}</a>
-                        </h3>
-                        <p>
-                            {{ with .Resources.GetMatch "description.md" }}
-                                {{ .Content }}
-                            {{ end }}
-                        </p>
-                        <div class="read-more">
-                            <a href="{{ .Permalink }}">Подробнее</a>
-                        </div>
-                    </div>
-                </div>
-                {{end}}
-            </div>
-        </div>
-    </section>
+    {{ partial "events" . }}
 </main>
 {{ end }}

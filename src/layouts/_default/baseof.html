@@ -18,7 +18,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.css" rel="stylesheet" integrity="sha256-Mi0V2Z77eSyUGlIC+o/H7p6TKEcic4P/lgUWMzigjqw=" crossorigin="anonymous">
     
-    {{ $css := resources.Get "css/style.css" }}
+    {{ $css := resources.Match "css/**.css" | resources.Concat "main.css" }}
     <link href="{{ $css.Permalink }}" rel="stylesheet">
 </head>
 

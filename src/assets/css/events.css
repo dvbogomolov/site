@@ -1,0 +1,61 @@
+/*--------------------------------------------------------------
+# Events
+--------------------------------------------------------------*/
+
+.events .events-carousel,
+.events .events-slider {
+  overflow: hidden;
+}
+
+.events .event-item {
+  box-sizing: content-box;
+  padding: 40px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  position: relative;
+  background: #fff;
+}
+
+.events .event-item .event-img {
+  width: 40%;
+  border: 6px solid #fff;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.events .event-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #111;
+}
+
+.events .event-item h4 {
+  font-size: 14px;
+  color: #999;
+  margin: 0;
+}
+
+.events .event-item p {
+  font-style: italic;
+  margin: 15px 0 0 0;
+  padding: 0;
+}
+
+.events .event-item .read-more {
+    -moz-text-align-last: right;
+    text-align-last: right;
+  }
+  
+  .events .event-item .read-more a {
+    display: inline-block;
+    background: #d9232d;
+    color: #fff;
+    padding: 6px 20px;
+    transition: 0.3s;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+  
+  .events .event-item .read-more a:hover {
+    background: #df3740;
+  }

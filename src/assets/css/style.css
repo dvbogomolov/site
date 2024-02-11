@@ -1,10 +1,3 @@
-/**
-* Template Name: Sailor
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -483,64 +476,6 @@ section {
   /* text-transform: uppercase; */
   font-family: "Raleway", sans-serif;
   color: #556270;
-}
-
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 18px 0;
-  background: #f8f9fa;
-  min-height: 40px;
-  margin-top: 80px;
-}
-
-.breadcrumbs h2 {
-  font-size: 32px;
-  font-weight: 300;
-  margin: 0;
-}
-
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-}
-
-.breadcrumbs ol li+li {
-  padding-left: 10px;
-}
-
-.breadcrumbs ol li+li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #6b7b8d;
-  content: "/";
-}
-
-@media (max-width: 992px) {
-  .breadcrumbs {
-    margin-top: 58px;
-  }
-
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
-
-  .breadcrumbs h2 {
-    margin-bottom: 10px;
-  }
-
-  .breadcrumbs ol {
-    display: block;
-  }
-
-  .breadcrumbs ol li {
-    display: inline-block;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -1105,67 +1040,6 @@ section {
 .faq .faq-item p {
   font-size: 15px;
 }
-
-/*--------------------------------------------------------------
-# Workshops
---------------------------------------------------------------*/
-.testimonials .testimonials-carousel,
-.testimonials .testimonials-slider {
-  overflow: hidden;
-}
-
-.testimonials .testimonial-item {
-  box-sizing: content-box;
-  padding: 40px;
-  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
-  position: relative;
-  background: #fff;
-}
-
-.testimonials .testimonial-item .testimonial-img {
-  width: 40%;
-  border: 6px solid #fff;
-  float: left;
-  margin: 0 10px 0 0;
-}
-
-.testimonials .testimonial-item h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
-  color: #111;
-}
-
-.testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: #999;
-  margin: 0;
-}
-
-.testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 15px 0 0 0;
-  padding: 0;
-}
-
-.testimonials .testimonial-item .read-more {
-    -moz-text-align-last: right;
-    text-align-last: right;
-  }
-  
-  .testimonials .testimonial-item .read-more a {
-    display: inline-block;
-    background: #d9232d;
-    color: #fff;
-    padding: 6px 20px;
-    transition: 0.3s;
-    font-size: 14px;
-    border-radius: 4px;
-  }
-  
-  .testimonials .testimonial-item .read-more a:hover {
-    background: #df3740;
-  }
 
 /*--------------------------------------------------------------
 # Contact
