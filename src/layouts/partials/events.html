@@ -11,7 +11,7 @@
                         <a href="{{ .Permalink }}">{{ .Title }}</a>
                     </h3>
                     <p>
-                        {{ with .Resources.GetMatch "description.md" }}
+                        {{ with .Resources.GetMatch "summary.md" }}
                         {{ .Content }}
                         {{ end }}
                     </p>
