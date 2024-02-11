@@ -17,8 +17,8 @@
     <link href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css" rel="stylesheet" integrity="sha256-bT9i1NF5afnHDpQ4z2cQBHJQGehoEj8uvClaAG+NXS0=" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.css" rel="stylesheet" integrity="sha256-Mi0V2Z77eSyUGlIC+o/H7p6TKEcic4P/lgUWMzigjqw=" crossorigin="anonymous">
-    
-    {{ $css := resources.Match "css/**.css" | resources.Concat "main.css" }}
+   
+    {{- $css := resources.Match "css/**.css" | resources.Concat "main.css" | minify }}
     <link href="{{ $css.Permalink }}" rel="stylesheet">
 </head>
 
@@ -38,7 +38,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.js" integrity="sha256-9kWxLyfE6cEhDVclz6iUuGRkNy57G+y+RxJqX+gvmt4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/waypoints@4.0.1/lib/noframework.waypoints.js" integrity="sha256-yPSDPgPfPXLx/AcXtQJTgwDG9R0xbRgNAj/0fizu454=" crossorigin="anonymous"></script>
 
-    {{ $js := resources.Get "js/main.js" }}
+    {{- $js := resources.Get "js/main.js" | minify }}
     <script src="{{ $js.Permalink }}"></script>
 </body>
 
