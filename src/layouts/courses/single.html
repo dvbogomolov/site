@@ -1,64 +1,6 @@
 {{ define "main" }}
 <main id="main">
-
     {{ partial "breadcrumbs" . }}
-
-    <section id="blog" class="blog">
-        <div class="container" data-aos="fade-up">
-
-            <div class="row">
-
-            <div class="entries">
-
-                <article class="entry entry-single">
-
-                    <h2 class="entry-title">
-                        <a href="{{ .Permalink }}">{{ .Title }}</a>
-                    </h2>
-
-                    <div class="entry-meta">
-                        <ul>
-                        <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="{{ .Permalink }}">{{ .Params.age }}</a></li>
-                        <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="{{ .Permalink }}">{{ .Params.duration }}</a></li>
-                        <li class="d-flex align-items-center"><i class="bi bi-cash"></i> <a href="{{ .Permalink }}">{{ .Params.price }}</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="entry-content">
-                        <p>
-                        {{ .Content }}
-                        </p>
-                    </div>
-
-                    <div id="gallery" class="gallery">
-                        <div class="container">
-                            <div class="row">
-                                {{ range .Resources.ByType "image" }}
-                                <div class="col-lg-4 col-md-6 gallery-item filter-app">
-                                    <div class="gallery-wrap">
-                                        <img src="{{ .Permalink }}" class="img-fluid" alt="">
-                                        <div class="gallery-info">
-                                            {{/* <h4>App 1</h4> */}}
-                                            {{/* <p>App</p> */}}
-                                            <div class="gallery-links">
-                                                <a href="{{ .Permalink }}" data-gallery="galleryGallery" class="gallery-lightbox" title="App 1">
-                                                    <i class="bx bx-plus"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                {{ end }}
-                            </div>
-                        </div>
-                    </section>
-                </article>
-
-            </div>
-
-            </div>
-
-        </div>
-    </section>
+    {{ partial "event" . }}
 </main>
 {{ end }}

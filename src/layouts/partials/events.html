@@ -2,8 +2,7 @@
     <div class="container">
         <div class="row">
 
-            {{- range sort .Pages "Params.weight" -}}
-
+            {{- range sort .Pages "Params.weight" }}
             <div class="col-lg-6">
                 <div class="event-item mt-4">
                     <img src="{{ .Permalink }}/images/1.jpg" class="event-img" alt="">
@@ -20,8 +19,8 @@
                     </div>
                 </div>
             </div>
+            {{ end -}}
 
-            {{- end }}
         </div>
     </div>
 </section>

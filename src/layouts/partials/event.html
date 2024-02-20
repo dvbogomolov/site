@@ -1,0 +1,31 @@
+<section id="event" class="event">
+    <div class="container" data-aos="fade-up">
+        <div class="row">
+
+            <article class="entry">
+                <h2 class="event-title">
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </h2>
+
+                <div class="event-meta">
+                    <ul>
+                        <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="{{ .Permalink }}">{{ .Params.age }}</a></li>
+                        <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="{{ .Permalink }}">{{ .Params.duration }}</a></li>
+                        <li class="d-flex align-items-center"><i class="bi bi-cash"></i> <a href="{{ .Permalink }}">{{ .Params.price }}</a></li>
+                    </ul>
+                </div>
+
+                <div class="event-content">
+                    <p>
+                        {{ .Content }}
+                    </p>
+                </div>
+
+                <div class="event-gallery">
+                    {{ partial "gallery" . }}
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
