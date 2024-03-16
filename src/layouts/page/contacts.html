@@ -2,7 +2,7 @@
 <main id="main">
     {{ partial "breadcrumbs" . }}
 
-    <section id="contact" class="contact">
+    <section id="contacts" class="contacts">
         <div class="container">
 
             <div class="row">
@@ -18,7 +18,7 @@
                   <div class="info-box mb-4">
                     <i class="bx bx-envelope"></i>
                     <h4>Контакты</h4>
-                    <p>{{ .Site.Params.Phone }}<br>{{ .Site.Params.Email }}</p>
+                    <p><a href="tel:{{ replaceRE "[\\s()-]" "" .Site.Params.Phone }}">{{ .Site.Params.Phone }}</a><br><a href="mailto:{{ .Site.Params.Email }}">{{ .Site.Params.Email }}</a></p>
                   </div>
                 </div>
       
@@ -32,7 +32,7 @@
       
               </div>            
 
-            <div>
+            <div class="map">
                 <iframe style="border:0; width: 100%; height: 400px;" src="https://yandex.ru/map-widget/v1/?um=constructor%3A1cdf23acf8e0549a702aad835b56b21a9b857cfb7412a27d97613880aa54091d&amp;source=constructor" frameborder="0"></iframe>
             </div>
 
