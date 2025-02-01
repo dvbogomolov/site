@@ -1,6 +1,10 @@
 ---
 template: page
-title: ertret
+title: Микромозаика - это восторг
 draft: true
 ---
-ertert
+> 1. падопадодлодлопдло
+>
+>    ![]()
+>
+>    **Друзья!**
